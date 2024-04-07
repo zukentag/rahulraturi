@@ -30,7 +30,12 @@ const Navbar = () => {
       <div className="flex gap-4">
         {socials.map((s, index) => {
           return (
-            <Link href={s.link} key={index} aria-label={s.label}>
+            <Link
+              href={s.link}
+              key={index}
+              aria-label={s.label}
+              target="_blank"
+            >
               <div className="w-5 h-5 hover:scale-125 transition-all">
                 {s.icon}
               </div>
