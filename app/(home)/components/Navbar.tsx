@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav className="py-10 flex justify-between ">
-      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-yellow-500 -rotate-2">
+      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-yellow-500">
         Rahul Ratuti 👾
       </h1>
       <div className="flex gap-4">

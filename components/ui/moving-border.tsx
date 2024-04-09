@@ -32,7 +32,7 @@ export function MovingBorderBtn({
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl  p-[1px] overflow-hidden ",
+        "bg-transparent relative text-xl overflow-hidden p-1 ",
         containerClassName
       )}
       style={{
@@ -56,14 +56,16 @@ export function MovingBorderBtn({
 
       <div
         className={cn(
-          "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
+          "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased p-1",
           className
         )}
         style={{
           borderRadius: `calc(${borderRadius} * 0.96)`,
         }}
       >
-        {children}
+        <div className="text-4xl lg:text-7xl bold text-center lg:text-left">
+          {children}
+        </div>
       </div>
     </Component>
   );
